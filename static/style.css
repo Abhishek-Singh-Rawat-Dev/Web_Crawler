@@ -1,0 +1,240 @@
+/* Resetting basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling - dark and mysterious */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0e0e0e;
+    color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("/static/bg-img.avif");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container styling */
+.container {
+    background-color: #181818;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 700px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+/* Header styling with bold, impactful text */
+h1 {
+    font-size: 2.5rem;
+    color: #39ff14; /* Neon Green */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Input group styling */
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    padding: 15px;
+    border: 2px solid #555;
+    border-radius: 6px;
+    width: 250px;
+    font-size: 1.1rem;
+    color: #e5e5e5;
+    background-color: #121212;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: #777;
+}
+
+.input-field:focus {
+    border-color: #39ff14;
+    background-color: #1c1c1c;
+}
+
+/* Button styling */
+.crawl-btn, .download-btn {
+    padding: 12px 25px;
+    background-color: #39ff14;
+    color: #0e0e0e;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.crawl-btn:hover, .download-btn:hover {
+    background-color: #32cc11;
+    transform: scale(1.05);
+}
+
+/* Links section styling */
+.links-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.links-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #e5e5e5;
+}
+
+.links-list li {
+    padding: 10px;
+    background-color: #242424;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.links-list li:hover {
+    background-color: #39ff14;
+    color: #0e0e0e;
+    cursor: pointer;/* Resetting basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling - dark and mysterious */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0e0e0e;
+    color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: radial-gradient(circle, #222, #0b0b0b);
+    background-attachment: fixed;
+}
+
+/* Container styling */
+.container {
+    background-color: #181818;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 700px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+/* Header styling with bold, impactful text */
+h1 {
+    font-size: 2.5rem;
+    color: #39ff14; /* Neon Green */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Input group styling */
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    padding: 15px;
+    border: 2px solid #555;
+    border-radius: 6px;
+    width: 250px;
+    font-size: 1.1rem;
+    color: #e5e5e5;
+    background-color: #121212;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: #777;
+}
+
+.input-field:focus {
+    border-color: #39ff14;
+    background-color: #1c1c1c;
+}
+
+/* Button styling */
+.crawl-btn, .download-btn {
+    padding: 12px 25px;
+    background-color: #39ff14;
+    color: #0e0e0e;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.crawl-btn:hover, .download-btn:hover {
+    background-color: #32cc11;
+    transform: scale(1.05);
+}
+
+/* Links section styling */
+.links-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.links-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #e5e5e5;
+}
+
+.links-list li {
+    padding: 10px;
+    background-color: #242424;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.links-list li:hover {
+    background-color: #39ff14;
+    color: #0e0e0e;
+    cursor: pointer;
+}
+
+/* Footer/Extra styles */
+button:focus {
+    outline: none;
+}
+
+}
+
+/* Footer/Extra styles */
+button:focus {
+    outline: none;
+}

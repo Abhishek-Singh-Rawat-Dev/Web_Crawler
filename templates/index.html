@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Web Crawler</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Advanced Web Crawler</h1>
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="Enter a URL" class="input-field">
+            <input type="number" id="depthInput" placeholder="Depth (e.g. 1, 2, 3)" min="1" value="1" class="input-field">
+        </div>
+        <button onclick="startCrawl()" class="crawl-btn">Crawl</button>
+
+        <div class="links-section">
+            <h3>Internal Links</h3>
+            <ul id="internalLinks" class="links-list"></ul>
+
+            <h3>External Links</h3>
+            <ul id="externalLinks" class="links-list"></ul>
+        </div>
+
+        <button onclick="downloadLinks()" class="download-btn">Download All Links</button>
+    </div>
+
+    <script>
+        function startCrawl() {
+            const url = document.getElementById("urlInput").value;
+            const depth = document.getElementById("depthInput").value;
+
+            fetch("/crawl", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ url: url, depth: depth })
+            })
+            .then(res => res.json())
+            .then(data => {
+                const internal = document.getElementById("internalLinks");
+                const external = document.getElementById("externalLinks");
+                internal.innerHTML = "";
+                external.innerHTML = "";
+
+                data.internal_links.forEach(link => {
+                    const li = document.createElement("li");
+                    li.textContent = link;
+                    internal.appendChild(li);
+                });
+
+                data.external_links.forEach(link => {
+                    const li = document.createElement("li");
+                    li.textContent = link;
+                    external.appendChild(li);
+                });
+            });
+        }
+
+        function downloadLinks() {
+            window.location.href = "/download";
+        }
+    </script>
+</body>
+</html>
